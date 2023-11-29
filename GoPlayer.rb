@@ -1,4 +1,4 @@
-class GoPlayer < Go
+class GoPlayer
   attr_reader :name, :color
 
   def initialize(name, color)

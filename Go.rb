@@ -1,4 +1,4 @@
-class Go < GameSimulator
+class Go
   def initialize(players)
     @players = []
     players.each { |x, y| @players.append(GoPlayer.new(x, y)) }
@@ -10,7 +10,7 @@ class Go < GameSimulator
     # [pretend there's code here]
   end
 
-  def get_score()
+  def get_results()
     return "[pretend these are go results]"
   end
 end

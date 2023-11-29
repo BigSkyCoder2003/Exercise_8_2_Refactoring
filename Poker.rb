@@ -1,11 +1,11 @@
-class Poker < GameSimulator
+class Poker
   def initialize(players)
     @players = players
     @poker_hands = []
     players.length().times { |x| @poker_hands.append(nil) }
   end
 
-  def play_poker()
+  def play()
     puts "Players in the poker game:"
     @players.length().times { |i| puts "#{self.get_player_name(i)}: #{self.get_player_hand(i)}" }
     # [pretend there's code here]
